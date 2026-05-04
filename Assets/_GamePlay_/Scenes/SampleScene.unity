@@ -1727,6 +1727,9 @@ MonoBehaviour:
   draggableLayer:
     serializedVersion: 2
     m_Bits: 64
+  grillLayer:
+    serializedVersion: 2
+    m_Bits: 128
   dragVisual: {fileID: 968597080}
   canDrag: 1
   limitDragTime: 20
@@ -2330,6 +2333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dish: {fileID: 686322034}
   foodOffsetWidth: 0.5
+  foodOffsetHeight: 0.25
 --- !u!1001 &1286364088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3751,7 +3755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idleThreshold: 4
-  wobbleAngle: 12
+  wobbleAngle: 1
   wobbleSpeed: 2.5
 --- !u!114 &2122517939
 MonoBehaviour:

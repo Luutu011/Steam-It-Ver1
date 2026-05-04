@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      thungrac_0: 3130639207445921484
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

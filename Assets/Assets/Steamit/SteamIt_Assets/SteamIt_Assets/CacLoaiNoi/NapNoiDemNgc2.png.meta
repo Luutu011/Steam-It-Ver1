@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NapNoiDemNgc2_0: 567050374151704233
+      NapNoiDemNgc2_1: -4581882387306893216
+      NapNoiDemNgc2_2: -3530594319388391491
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

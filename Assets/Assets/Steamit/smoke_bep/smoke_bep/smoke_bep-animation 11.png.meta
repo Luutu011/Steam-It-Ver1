@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      smoke_bep-animation 11_0: 1747806233940349901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

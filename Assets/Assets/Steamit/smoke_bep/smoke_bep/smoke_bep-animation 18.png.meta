@@ -534,7 +534,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      smoke_bep-animation 18_0: 2699091974215356843
+      smoke_bep-animation 18_1: -5799003277979173547
+      smoke_bep-animation 18_10: -5777514706906195677
+      smoke_bep-animation 18_11: -5237097546850044082
+      smoke_bep-animation 18_12: -40062014815790560
+      smoke_bep-animation 18_13: -4136813766900782549
+      smoke_bep-animation 18_14: -9032105622636689699
+      smoke_bep-animation 18_15: 4334425763828329743
+      smoke_bep-animation 18_16: 2812927783312842983
+      smoke_bep-animation 18_2: 8224083255932467551
+      smoke_bep-animation 18_3: 7586279784193229854
+      smoke_bep-animation 18_4: -6224986778934727577
+      smoke_bep-animation 18_5: -8406319571616830778
+      smoke_bep-animation 18_6: 4529091547202842586
+      smoke_bep-animation 18_7: 3310268509805907585
+      smoke_bep-animation 18_8: -9166791232364986392
+      smoke_bep-animation 18_9: -4252148933186156673
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

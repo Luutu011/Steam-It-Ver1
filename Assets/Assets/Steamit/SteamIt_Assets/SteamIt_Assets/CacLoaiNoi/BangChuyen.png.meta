@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BangChuyen_0: 8207109850325476050
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

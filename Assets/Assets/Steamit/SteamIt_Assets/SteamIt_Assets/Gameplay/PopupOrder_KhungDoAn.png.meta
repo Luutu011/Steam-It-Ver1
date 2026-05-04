@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PopupOrder_KhungDoAn_0: -813583027528712150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
