@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6f4df7f8a7eb14181dbd536da7dbf5, type: 3}
+  m_Name: LevelData
+  m_EditorClassIdentifier: 
+  categories:
+  - foodType: 1
+    foodSprite: {fileID: -8164876006794030920, guid: 1cb2c759b0285664e80825ede50fa36d, type: 3}
+  - foodType: 2
+    foodSprite: {fileID: 8514294681330402218, guid: e1fe3b4c95a71964db8863cac028f431, type: 3}
+  - foodType: 3
+    foodSprite: {fileID: 4032361354844384264, guid: d0fd90ff375c3fc4f8df145c789a5be7, type: 3}
+  - foodType: 4
+    foodSprite: {fileID: -5584619729630796831, guid: 3f8e7b1c51cc0754a8331e7e2238ade3, type: 3}
+  - foodType: 5
+    foodSprite: {fileID: -1542925080273984690, guid: 2d3bdc1cac5a7b148b07ac32bede710e, type: 3}
+  - foodType: 6
+    foodSprite: {fileID: -665086588554763661, guid: 9b69871c8f717c445844a7041c113d77, type: 3}
+  - foodType: 7
+    foodSprite: {fileID: -2624125387823022238, guid: 42357edcdc30b664ebba83dac0b74538, type: 3}
+  - foodType: 8
+    foodSprite: {fileID: -5441843497540741230, guid: 212b794503a294045b6d8cedeb3b6aa4, type: 3}
+  - foodType: 9
+    foodSprite: {fileID: 670000194318869527, guid: dce7aa8f9b3173b4a82f1e12b72b6b90, type: 3}
+  - foodType: 10
+    foodSprite: {fileID: -8147424620729301571, guid: 7afbc00e7537d574a999403c96ca91be, type: 3}
+  - foodType: 11
+    foodSprite: {fileID: 5461084247091874286, guid: ffb05affa11fa12449f31d5f5aeb21fc, type: 3}
+  - foodType: 12
+    foodSprite: {fileID: 1266123157469223995, guid: 7e680fc070e3d77479313a16d2c8fe26, type: 3}
+  - foodType: 13
+    foodSprite: {fileID: -2299540218470643807, guid: e45047caac1d11f478b0ef909c4a8b33, type: 3}
+  - foodType: 14
+    foodSprite: {fileID: 2355581020110235796, guid: caa98976a3a065e4790156e509ec4daf, type: 3}
+  - foodType: 15
+    foodSprite: {fileID: -4811270625660798035, guid: 8ec3804df602cd64087a9565351df218, type: 3}
+  - foodType: 16
+    foodSprite: {fileID: 2238057168542944341, guid: 6e443310c86efe443b4e190bbba73360, type: 3}
+  - foodType: 17
+    foodSprite: {fileID: 5205439752039628416, guid: c8c5134a914008442bdf0179acc9cc0e, type: 3}
+  - foodType: 18
+    foodSprite: {fileID: -4138503993340411408, guid: 118923036da46234ba72d5661ddd7f0d, type: 3}
+  - foodType: 19
+    foodSprite: {fileID: -3768143879482294392, guid: 02f5ae9cdfccd534c9c2ca334c271c68, type: 3}
+  - foodType: 20
+    foodSprite: {fileID: -4926088574258679197, guid: c660ee9b58f977c4c93b15b06e6e5fad, type: 3}
+  - foodType: 21
+    foodSprite: {fileID: -1689847168986556394, guid: 78c5391237d82a543a8d2d7b5b51ecd0, type: 3}
+  - foodType: 22
+    foodSprite: {fileID: 2496073718457960143, guid: 52f04bd6fe071b94ca57032577b99d23, type: 3}
+  - foodType: 23
+    foodSprite: {fileID: -955910516806632809, guid: 6fc95b22a5fb8d044b7a720985029d80, type: 3}
+  - foodType: 24
+    foodSprite: {fileID: 5274401074844164374, guid: ca3c061284faa2e459569877434cd354, type: 3}
+  - foodType: 25
+    foodSprite: {fileID: 3288119011596175180, guid: 60e75156bf85d3b498d3364bc8f29e8f, type: 3}
+  - foodType: 26
+    foodSprite: {fileID: -5332651674951620455, guid: 26e0d1d0264b46f4f9949b50503d6b89, type: 3}
+  - foodType: 27
+    foodSprite: {fileID: 3466311515344627443, guid: e4aec7159cabaa34c9c293392f27fb93, type: 3}
+  - foodType: 28
+    foodSprite: {fileID: 279306380666077941, guid: 7b3d1cbd79c87e242975875e80800c3b, type: 3}

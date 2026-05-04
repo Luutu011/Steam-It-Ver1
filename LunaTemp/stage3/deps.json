@@ -1,0 +1,71 @@
+{
+  "ignores": [
+    "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Utils/Utilities.cs",
+    "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
+    "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
+    "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+  ],
+  "groups": [
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Food/FoodEnum.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Food/LevelData.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Food/FoodSlot.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Food/FoodSlotGraphicController.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Grill/Grill.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/DragManager.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Utils/Ply_Singleton.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/SoundManager.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/GameManager.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/UIManager.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/CameraManager.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/TutorialManager.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/GuideManager.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/LevelManager.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Utils/Utilities.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Ply_GameUnit.cs",
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Grill/GrillGraphicController.cs"
+    ],
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Utils/Yielders.cs"
+    ],
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
+    ],
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUIToolkit.cs"
+    ],
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "C:/Users/luutu/Documents/Steam It Ver1/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "C:/Users/luutu/Downloads/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "C:/Users/luutu/Downloads/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "C:/Users/luutu/Downloads/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
