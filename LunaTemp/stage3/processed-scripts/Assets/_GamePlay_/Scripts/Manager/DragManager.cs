@@ -10,6 +10,7 @@ public class DragManager : Ply_Singleton<DragManager>
 {
     [Header("Layer Masks")]
     public LayerMask draggableLayer;
+    public LayerMask grillLayer;
 
     [Header("Drag Visual")]
     [Tooltip("A SpriteRenderer used to show the food while dragging. Should be an object in the scene.")]
@@ -124,16 +125,26 @@ public class DragManager : Ply_Singleton<DragManager>
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             bool placed = false;
 
-            // Check for target slot
-            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, draggableLayer))
+            // Check for target (either a specific slot or a grill)
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, grillLayer))
             {
                 FoodSlot targetSlot = hit.collider.GetComponent<FoodSlot>();
                 if (targetSlot == null) targetSlot = hit.collider.GetComponentInParent<FoodSlot>();
 
+                Grill targetGrill = hit.collider.GetComponent<Grill>();
+                if (targetGrill == null) targetGrill = hit.collider.GetComponentInParent<Grill>();
+
+                // If we hit a grill but no specific slot (or if the slot is occupied/null), 
+                // try to find the first empty slot in that grill.
+                if (targetGrill != null && (targetSlot == null || targetSlot.food.foodType != FoodEnum.None))
+                {
+                    targetSlot = targetGrill.GetFirstEmptySlot();
+                }
+
                 if (targetSlot != null && targetSlot != currentSourceSlot && targetSlot.food.foodType == FoodEnum.None)
                 {
-                    Grill targetGrill = targetSlot.GetComponentInParent<Grill>();
-                    if (targetGrill != null && !targetGrill.IsClosed)
+                    Grill actualTargetGrill = targetSlot.GetComponentInParent<Grill>();
+                    if (actualTargetGrill != null && !actualTargetGrill.IsClosed)
                     {
                         // Transfer Data
                         targetSlot.AddFood(currentSourceSlot.food);

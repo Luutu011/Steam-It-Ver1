@@ -91,4 +91,18 @@ public class Grill : Ply_GameUnit
         targetSlot.AddFood(LevelManager.Instance.GetFoodData(foodType));
         return true;
     }
+
+    /// <summary>
+    /// Returns the first empty slot in the grill.
+    /// </summary>
+    public FoodSlot GetFirstEmptySlot()
+    {
+        if (IsClosed) return null;
+        foreach (var slot in foodSlots)
+        {
+            if (slot.food.foodType == FoodEnum.None)
+                return slot;
+        }
+        return null;
+    }
 }
