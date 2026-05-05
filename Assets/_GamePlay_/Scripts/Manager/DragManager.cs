@@ -98,7 +98,7 @@ public class DragManager : Ply_Singleton<DragManager>
                     if (slot.sr != null) slot.sr.enabled = false;
 
                     // Play Tap SFX
-                    SoundManager.Ins?.PlayFx(FxType.Tap);
+                    SoundManager.Ins.PlayFx(FxType.Tap);
 
                     IsDragging = true;
                     GameManager.Instance.isGameStart = true;
@@ -152,7 +152,7 @@ public class DragManager : Ply_Singleton<DragManager>
                         placed = true;
 
                         // Play Placed SFX
-                        SoundManager.Ins?.PlayFx(FxType.Placed);
+                        SoundManager.Ins.PlayFx(FxType.Placed);
                     }
                 }
             }

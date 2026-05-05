@@ -15,6 +15,10 @@ public class FoodSlotGraphicController : MonoBehaviour
 
     [Tooltip("Vertical offset between food items in the dish.")]
     [SerializeField] private float foodOffsetHeight = 0.25f;
+    [SerializeField] private Transform leftPositionInDish;
+    [SerializeField] private Transform middlePositionInDish;
+    [SerializeField] private Transform rightPositionInDish;
+
 
     private void Awake()
     {
@@ -68,26 +72,28 @@ public class FoodSlotGraphicController : MonoBehaviour
         GameObject foodClone = GetFoodAnimationObject();
         SpriteRenderer sr = foodClone.GetComponent<SpriteRenderer>();
         sr.sprite = foodSprite;
-        sr.sortingOrder = 100;
+        sr.sortingOrder = 101;
         foodClone.transform.position = foodSlot.transform.position;
         foodClone.transform.localScale = foodSlot.transform.lossyScale;
 
         // Calculate offset position relative to the dish's center (Triangle layout: 0=Top, 1=Left, 2=Right)
+        Vector3 targetWorldPos = Vector3.zero;
         Vector3 offset = Vector3.zero;
-        if (indexInGrill == 0) // Top
+        if (indexInGrill == 0) // Right
         {
-            offset = new Vector3(0f, foodOffsetHeight * 0.5f, 0f);
+            targetWorldPos = rightPositionInDish.position;
         }
         else if (indexInGrill == 1) // Left
         {
-            offset = new Vector3(-foodOffsetWidth, -foodOffsetHeight * 0.5f, 0f);
+            targetWorldPos = leftPositionInDish.position;
         }
-        else if (indexInGrill == 2) // Right
-        {
-            offset = new Vector3(foodOffsetWidth, -foodOffsetHeight * 0.5f, 0f);
+        else if (indexInGrill == 2) // Top
+        {           
+            sr.sortingOrder = 100;
+            targetWorldPos = middlePositionInDish.position;
+
         }
 
-        Vector3 targetWorldPos = targetTransform.position + offset;
 
         StartCoroutine(FlyToDish(foodClone, targetWorldPos, onComplete));
     }

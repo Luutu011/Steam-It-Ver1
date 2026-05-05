@@ -95,12 +95,40 @@ public class LevelManager : MonoBehaviour
             for (int i = 0; i < 3; i++) RemoveFirst(assignments, tutorialEntry);
         }
 
-        Utilities.Shuffle(assignments);
-        Utilities.Shuffle(remainingSlots);
+        int safety = 0;
+        bool hasStartingMatch;
+        do
+        {
+            hasStartingMatch = false;
+            Utilities.Shuffle(assignments);
+            Utilities.Shuffle(remainingSlots);
 
-        int count = Mathf.Min(assignments.Count, remainingSlots.Count);
-        for (int i = 0; i < count; i++)
-            remainingSlots[i].AddFood(assignments[i]);
+            int count = Mathf.Min(assignments.Count, remainingSlots.Count);
+            for (int i = 0; i < count; i++)
+                remainingSlots[i].AddFood(assignments[i]);
+
+            // Check if any grill is already in a clearable state
+            foreach (Grill grill in grills)
+            {
+                if (grill != null && grill.IsClearable())
+                {
+                    Debug.Log("Bat duoc r nha");
+                    hasStartingMatch = true;
+                    break;
+                }
+            }
+
+            // If we found a match, clear the random assignments and try again
+            if (hasStartingMatch && safety < 100)
+            {
+                foreach (FoodSlot slot in remainingSlots)
+                {
+                    if (slot != null) slot.Clear();
+                }
+            }
+
+            safety++;
+        } while (hasStartingMatch && safety < 100);
 
         // ── Step 5: notify GuideManager ──────────────────────────────────
         if (tutorialPinned)

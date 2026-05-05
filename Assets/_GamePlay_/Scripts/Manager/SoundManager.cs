@@ -16,6 +16,7 @@ public class SoundManager : Ply_Singleton<SoundManager>
     private AudioSource[] fx = new AudioSource[10];
 
     bool isMute = false;
+    bool isMusicPlay = false;
 
     public void PlayFx(FxType fxType)
     {
@@ -42,5 +43,11 @@ public class SoundManager : Ply_Singleton<SoundManager>
                 fx[i].Stop();
             }
         }
+    }
+
+    public void PlayMusic()
+    {
+        // if(!isMusicPlay)sound.Play();
+        isMusicPlay = true;
     }
 }

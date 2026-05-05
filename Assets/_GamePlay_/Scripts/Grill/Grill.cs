@@ -44,7 +44,7 @@ public class Grill : Ply_GameUnit
         IsClosed = true; // prevent re-triggering
 
         // Play clearing SFX
-        SoundManager.Ins?.PlayFx(FxType.FlyToDish);
+        SoundManager.Ins.PlayFx(FxType.FlyToDish);
 
         // Animate each food slot's visual to fly to the dish target with index offset
         int pending = foodSlots.Count;

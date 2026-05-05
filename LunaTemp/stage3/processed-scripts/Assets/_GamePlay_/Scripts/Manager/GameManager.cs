@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if(isGameStart) SoundManager.Ins.PlayMusic();
         // When the category threshold is reached (or game is over),
         // any tap redirects to the store instead of triggering a drag.
         if ((isGameOver || HasReachedLimit()) && Input.GetMouseButtonDown(0))
