@@ -1,10 +1,8 @@
 using System;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Ply_Singleton<GameManager>
 {
-    public static GameManager Instance { get; private set; }
-
     [Header("Win Condition")]
     [Tooltip("How many distinct grill categories must be cleared to win.")]
     public int numberOfClearableCategories = 26;
@@ -14,17 +12,12 @@ public class GameManager : MonoBehaviour
     public bool isGameStart = false;
     public bool isGameOver = false;
 
-    private int clearedCount = 0;
 
-    private void Awake()
-    {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
+    private int clearedCount = 0;
 
     private void Update()
     {
-        if(isGameStart) SoundManager.Ins.PlayMusic();
+ 
         // When the category threshold is reached (or game is over),
         // any tap redirects to the store instead of triggering a drag.
         if ((isGameOver || HasReachedLimit()) && Input.GetMouseButtonDown(0))
@@ -55,7 +48,7 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = true;
         //SoundManager.Instance.PlaySoundEffect(4);
-        UIManager.Instance.LevelWon();
+        UIManager.Ins.LevelWon();
         GoToStore();
     }
 

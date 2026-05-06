@@ -5,21 +5,13 @@ using DG.Tweening;
 /// <summary>
 /// Manages the hand-guide tutorial visual.
 /// </summary>
-public class TutorialManager : MonoBehaviour
+public class TutorialManager : Ply_Singleton<TutorialManager>
 {
-    public static TutorialManager Instance { get; private set; }
-
     [Tooltip("The hand-guide GameObject placed manually in the scene.")]
     [SerializeField] private GameObject handGuide;
 
     public bool isTutorial = true;
     private Tween handTween;
-
-    private void Awake()
-    {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
 
     /// <summary>
     /// Starts the hand animation moving from 'startPos' to 'endPos'.

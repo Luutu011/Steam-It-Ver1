@@ -75,7 +75,7 @@ public class Grill : Ply_GameUnit
         // Close grill cover
         graphic.CloseCoverAnimation();
 
-        GameManager.Instance.OnGrillCleared();
+        GameManager.Ins.OnGrillCleared();
     }
 
     /// <summary>
@@ -88,7 +88,7 @@ public class Grill : Ply_GameUnit
         if (!foodSlots.Contains(targetSlot)) return false;
         if (targetSlot.food.foodType != FoodEnum.None) return false;
 
-        targetSlot.AddFood(LevelManager.Instance.GetFoodData(foodType));
+        targetSlot.AddFood(LevelManager.Ins.GetFoodData(foodType));
         return true;
     }
 

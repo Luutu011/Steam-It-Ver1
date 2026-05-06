@@ -17,16 +17,18 @@
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Grill/Grill.cs",
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/DragManager.cs",
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Utils/Ply_Singleton.cs",
-      "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/SoundManager.cs",
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/GameManager.cs",
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/UIManager.cs",
-      "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/CameraManager.cs",
-      "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/TutorialManager.cs",
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/GuideManager.cs",
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/LevelManager.cs",
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Utils/Utilities.cs",
+      "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/TutorialManager.cs",
+      "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/SoundManager.cs",
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Ply_GameUnit.cs",
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Grill/GrillGraphicController.cs"
+    ],
+    [
+      "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Manager/CameraManager.cs"
     ],
     [
       "D:/Project/Steam-It-Ver1/LunaTemp/stage3/processed-scripts/Assets/_GamePlay_/Scripts/Utils/Yielders.cs"

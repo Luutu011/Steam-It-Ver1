@@ -22,7 +22,7 @@ public class CameraManager : MonoBehaviour
 
         // Determine initial orientation
         wasLandscape = Screen.width > Screen.height;
-        UIManager.Instance?.SetOrientation(wasLandscape);
+        //UIManager.Instance?.SetOrientation(wasLandscape);
     }
 
     private void Update()
@@ -35,7 +35,7 @@ public class CameraManager : MonoBehaviour
         if (isLandscape != wasLandscape)
         {
             wasLandscape = isLandscape;
-            UIManager.Instance?.SetOrientation(isLandscape);
+            //UIManager.Instance?.SetOrientation(isLandscape);
         }
 
         // Adjust orthographic size so the reference width always fits on screen

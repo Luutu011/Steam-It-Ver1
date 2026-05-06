@@ -2,9 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class UIManager : Ply_Singleton<UIManager>
 {
-    public static UIManager Instance { get; private set; }
 
     [Header("Orientation Panels")]
     [Tooltip("Root panel shown when the device is in portrait mode.")]
@@ -22,12 +21,6 @@ public class UIManager : MonoBehaviour
 
     [Header("Warning VFX")]
     [SerializeField] private Image warningVFX;
-
-    private void Awake()
-    {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
 
     // ── Orientation ──────────────────────────────────────────────────────────
 
@@ -81,6 +74,6 @@ public class UIManager : MonoBehaviour
     public void InstallButtonClick()
     {
         //SoundManager.Instance.PlaySoundEffect(3);
-        GameManager.Instance.GoToStore();
+        GameManager.Ins.GoToStore();
     }
 }

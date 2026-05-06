@@ -31,6 +31,10 @@ public class DragManager : Ply_Singleton<DragManager>
 
     public int limitDragTime = 20;
 
+    public bool isPlayMusic = false;
+
+    public AudioSource bgMusic;
+
     // ── Unity ────────────────────────────────────────────────────────────────
 
     private void Start()
@@ -50,17 +54,25 @@ public class DragManager : Ply_Singleton<DragManager>
     {
         if (limitDragTime <= 0)
         {
-            GameManager.Instance.GoToStore();
-            GameManager.Instance.isGameOver = true;
+            GameManager.Ins.GoToStore();
+            GameManager.Ins.isGameOver = true;
             return;
         }
 
-        if (GameManager.Instance.isGameOver || GameManager.Instance.HasReachedLimit()) return;
+        if (GameManager.Ins.isGameOver || GameManager.Ins.HasReachedLimit()) return;
         if (!canDrag) return;
 
         // ── Mouse / Touch Down ────────────────────────────────────────────
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("Mouse down");
+            if (!GameManager.Ins.isGameStart && !isPlayMusic)
+            {
+                Debug.Log("Play music");
+                bgMusic.Play();
+                isPlayMusic = true;
+            }
+
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, draggableLayer))
             {
@@ -74,8 +86,8 @@ public class DragManager : Ply_Singleton<DragManager>
                     if (parentGrill != null && parentGrill.IsClosed) return;
 
                     // End tutorial
-                    TutorialManager.Instance?.EndTutorial();
-                    GuideManager.Instance?.Hide();
+                    TutorialManager.Ins?.EndTutorial();
+                    GuideManager.Ins?.Hide();
 
                     currentSourceSlot = slot;
                     startWorldPos = slot.TF.position;
@@ -101,7 +113,7 @@ public class DragManager : Ply_Singleton<DragManager>
                     SoundManager.Ins.PlayFx(FxType.Tap);
 
                     IsDragging = true;
-                    GameManager.Instance.isGameStart = true;
+                    GameManager.Ins.isGameStart = true;
                     limitDragTime--;
                 }
             }
@@ -110,6 +122,7 @@ public class DragManager : Ply_Singleton<DragManager>
         // ── Mouse Drag ────────────────────────────────────────────────────
         if (Input.GetMouseButton(0) && currentSourceSlot != null)
         {
+
             Vector3 mouseWorld = mainCamera.ScreenToWorldPoint(
                 new Vector3(Input.mousePosition.x, Input.mousePosition.y, zDistanceToCamera));
 

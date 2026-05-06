@@ -8,10 +8,8 @@ using UnityEngine;
 /// 2. Guide Wobble: Appears after 5 seconds of inactivity. 
 ///    Finds 3 matching items on the board to highlight.
 /// </summary>
-public class GuideManager : MonoBehaviour
+public class GuideManager : Ply_Singleton<GuideManager>
 {
-    public static GuideManager Instance { get; private set; }
-
     [Header("Timings")]
     [Tooltip("Seconds of inactivity before the guide appears.")]
     [SerializeField] private float idleThreshold = 5f;
@@ -31,12 +29,6 @@ public class GuideManager : MonoBehaviour
     private bool isShowing;
     private bool isTutorialActive = true;
     private Coroutine wobbleCoroutine;
-
-    private void Awake()
-    {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
 
     private void Update()
     {
@@ -102,7 +94,7 @@ public class GuideManager : MonoBehaviour
                 // Show Hand only during tutorial
                 if (tutorialDonor != null && tutorialTarget != null)
                 {
-                    TutorialManager.Instance?.StartHandGuide(tutorialDonor.TF.position, tutorialTarget.TF.position);
+                    TutorialManager.Ins?.StartHandGuide(tutorialDonor.TF.position, tutorialTarget.TF.position);
                 }
             }
         }
@@ -146,7 +138,7 @@ public class GuideManager : MonoBehaviour
             }
 
             // Always hide hand when player interacts
-            TutorialManager.Instance?.HideHand();
+            TutorialManager.Ins?.HideHand();
 
             // If it was the tutorial hand, permanently disable tutorial mode now
             if (isTutorialActive) isTutorialActive = false;

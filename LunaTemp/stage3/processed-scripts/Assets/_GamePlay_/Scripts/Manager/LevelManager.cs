@@ -5,9 +5,8 @@ using UnityEngine;
 /// Populates all grills from a LevelData ScriptableObject.
 /// Also acts as the central provider for food data (sprites).
 /// </summary>
-public class LevelManager : MonoBehaviour
+public class LevelManager : Ply_Singleton<LevelManager>
 {
-    public static LevelManager Instance { get; private set; }
 
     [Header("Level Data")]
     [Tooltip("ScriptableObject that defines food categories and their sprites.")]
@@ -25,13 +24,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private int guideDonorGrillIndex = 1;
 
     // ── Unity ────────────────────────────────────────────────────────────────
-
-    private void Awake()
-    {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
-
     private void Start()
     {
         GenerateLevel();
@@ -134,8 +126,8 @@ public class LevelManager : MonoBehaviour
         if (tutorialPinned)
         {
             // Hand moves from donor to the empty slot in the target grill
-            GuideManager.Instance?.SetTutorialMove(donorSlot, emptySlot, target1, target2);
-            TutorialManager.Instance?.StartHandGuide(donorSlot.TF.position, emptySlot.TF.position);
+            GuideManager.Ins?.SetTutorialMove(donorSlot, emptySlot, target1, target2);
+            TutorialManager.Ins?.StartHandGuide(donorSlot.TF.position, emptySlot.TF.position);
         }
     }
 
